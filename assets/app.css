@@ -101,7 +101,7 @@
  .masthead-content h1 {
 	 font-size: 50px;
 }
-
+/**Container*/
 article.container{
     background-color:white;
 	 text-align: justify;
@@ -140,7 +140,7 @@ article.container{
     position: fixed;
     bottom: 0;
     left: 0;
-    transition: 0.8s;
+    transition: 1s ease;
 
 }
 
@@ -148,7 +148,7 @@ article.container{
 #add_ppp #add_ppp_inner:hover {
     height: 180px; 
 }
- 
+ /* Main add */
 #add_ppp #add_ppp_inner #ppp_add{
     background-image: url(../assets/img/IMG_Wall.jpg);
     background-position: 100%;
@@ -159,7 +159,7 @@ article.container{
     width: 30%;
     z-index: 10;
     height: 100px;
-    transition: 0.8s;
+    transition: 1s ease;
 }
 
 #add_ppp:hover #add_ppp_inner #ppp_add,
@@ -168,6 +168,7 @@ article.container{
     transform: translate(80%, -18%);
 }
 
+/* Add .overlay */
 #add_ppp #add_ppp_inner #ppp_add .overlay{
     position: absolute;
     top: 0;
@@ -180,7 +181,7 @@ article.container{
 }
 
 #add_ppp #add_ppp_inner #ppp_add .add_content {
-    position: absolute;
+    position: relative;
     z-index: 20;
     display: flex;
     flex-direction: row;
@@ -191,40 +192,143 @@ article.container{
 #add_ppp #add_ppp_inner #ppp_add .add_content .add_item {
     width: 9%;
 }
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.Logo{
-    height: 40px;
-    width: 40px;
+/* logo */
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.Logo img{
+    height: 60px;
+    width: 80px;
+    transition: .8s ease-in;
 }
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Flower{
-    align-self: self-end;
-}
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Flower{
-    align-self: self-end;
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.Logo img,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.Logo img{
+   transform: scale(1.3);
 }
 
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.concept {
+ /* Flower */
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Flower img{
+    height: 25px;
+    height: 30px;
+    position: fixed;
+    bottom: 5px;
+    left: 10%;
+    transition: .8s;
+}
+
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.IMG_Flower img,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.IMG_Flower img{
+    transform: scale(1.5);
+    position: fixed;
+    top: 75%;
+    left: 3%;
+}
+
+/* box 1 */
+.add_item.IMG_Wipes img {
+    height: 100px;
+    width: 60px;
+    transform: scaleY(1);
+    transition: 1s ease;
+    z-index: 2;
+}
+#add_ppp:hover .add_item.IMG_Wipes img,
+#add_ppp #ppp_add:hover .add_item.IMG_Wipes img{
+    transform: scale(1.5);
+    margin-bottom: -150px;
+}
+/* box 2 */
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Wipes_Coconut {
+    margin-bottom:-10px;
+    z-index: 2;
+}
+
+.add_item.IMG_Wipes_Coconut img {
+    height: 95px;
+    transform: scaleY(1);
+    transition: 1s ease;
+    z-index: 30;
+}
+
+#add_ppp:hover .add_item.IMG_Wipes_Coconut img,
+#add_ppp #ppp_add:hover .add_item.IMG_Wipes_Coconut img{
+    transform: scale(1.3);
+    margin-bottom: -140px;
+    margin-left: 15px;
+    
+}
+
+
+/* coconut */
+.add_content .add_item.IMG_Coconut {
+    align-self: flex-end;
+    margin-bottom: 15px;
+    transition: 1.0s ease;
+    z-index: 25;
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+#add_ppp:hover .add_content .add_item.IMG_Coconut,
+#add_ppp #add_ppp_inner:hover .add_item.IMG_Coconut{
+    align-self: flex-end;
+    margin-bottom: 15px;
+    bottom:0;
+    transform: scale(2.2);
+    margin-bottom: -130px;
+}
+
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.concept  {
     width: 35%;
     color: white;
     font-size: 14px;
+    opacity: 1;
+    transition: 1.0s ease-in-out;
 }
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.call_to_action{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.concept ,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.concept  {
+    opacity: 0;
+    margin-bottom: -300px;
 }
+
+/* concept hover */
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.concept_hover{
+    width: 35%;
+    color: white;
+    font-size: 14px;
+    display: none;
+    margin-right: -250px;
+    transition: 1.0s ease-in;
+}
+
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.concept_hover,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.concept_hover {
+    display: block;
+    margin-right: -2px;
+}
+
+
+/* button */
 #add_ppp #add_ppp_inner #ppp_add .add_content .add_item.call_to_action a {
     cursor: pointer;
     background-color: white;
     color: rgb(178 33 32);
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     white-space: nowrap;
-    font-size: 10px;
-    padding: 7px;
-    margin-right: 10px;
-    
+    font-size: 8px;
+    font-weight: 700;
+    padding: 5px 3px;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    transition: 1.0s ease;
 }
+
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.call_to_action a,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.call_to_action a{
+
+    right: 160px;
+    bottom: 40px;
+}
+
 
 #add_ppp #add_ppp_inner #ppp_add .add_content .add_item.call_to_action span {
     font-size: 6px;
