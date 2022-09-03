@@ -193,15 +193,22 @@ article.container{
     width: 9%;
 }
 /* logo */
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.Logo img{
+#add_ppp  .add_item.Logo img{
     height: 60px;
     width: 80px;
     transition: .8s ease-in;
+    margin-left: 15%;
 }
-#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.Logo img,
-#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.Logo img{
+#add_ppp:hover .add_item.Logo img,
+#add_ppp #add_ppp_inner:hover #ppp_add  .add_item.Logo img{
    transform: scale(1.3);
 }
+
+#add_ppp:hover .add_item.Logo,
+#add_ppp #add_ppp_inner:hover .add_item.Logo {
+    margin-top: 62px;
+}
+
 
  /* Flower */
 #add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Flower img{
@@ -209,7 +216,7 @@ article.container{
     height: 30px;
     position: fixed;
     bottom: 5px;
-    left: 10%;
+    left: 8%;
     transition: .8s;
 }
 
@@ -217,22 +224,22 @@ article.container{
 #add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.IMG_Flower img{
     transform: scale(1.5);
     position: fixed;
-    top: 75%;
-    left: 3%;
+    top: 78%;
+    left: 6%;
 }
 
 /* box 1 */
 .add_item.IMG_Wipes img {
     height: 100px;
     width: 60px;
-    transform: scaleY(1);
+    transform: scaleY(1.2);
     transition: 1s ease;
     z-index: 2;
 }
 #add_ppp:hover .add_item.IMG_Wipes img,
 #add_ppp #ppp_add:hover .add_item.IMG_Wipes img{
     transform: scale(1.5);
-    margin-bottom: -150px;
+    margin-bottom: -115px;
 }
 /* box 2 */
 #add_ppp #add_ppp_inner #ppp_add .add_content .add_item.IMG_Wipes_Coconut {
@@ -242,7 +249,7 @@ article.container{
 
 .add_item.IMG_Wipes_Coconut img {
     height: 95px;
-    transform: scaleY(1);
+    transform: scaleY(1.2);
     transition: 1s ease;
     z-index: 30;
 }
@@ -250,9 +257,8 @@ article.container{
 #add_ppp:hover .add_item.IMG_Wipes_Coconut img,
 #add_ppp #ppp_add:hover .add_item.IMG_Wipes_Coconut img{
     transform: scale(1.3);
-    margin-bottom: -140px;
+    margin-bottom: -120px;
     margin-left: 15px;
-    
 }
 
 
@@ -268,40 +274,40 @@ article.container{
 
 #add_ppp:hover .add_content .add_item.IMG_Coconut,
 #add_ppp #add_ppp_inner:hover .add_item.IMG_Coconut{
-    align-self: flex-end;
-    margin-bottom: 15px;
-    bottom:0;
     transform: scale(2.2);
-    margin-bottom: -130px;
+    margin-bottom: -70px;
 }
 
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.concept  {
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.content {
     width: 35%;
+}
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item .concept {
     color: white;
     font-size: 14px;
     opacity: 1;
     transition: 1.0s ease-in-out;
 }
-#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.concept ,
-#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.concept  {
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item .concept,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item .concept {
     opacity: 0;
     margin-bottom: -300px;
 }
 
 /* concept hover */
-#add_ppp #add_ppp_inner #ppp_add .add_content .add_item.concept_hover{
-    width: 35%;
+#add_ppp #add_ppp_inner #ppp_add .add_content .add_item .concept_hover{
     color: white;
     font-size: 14px;
     display: none;
-    margin-right: -250px;
     transition: 1.0s ease-in;
 }
 
-#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.concept_hover,
-#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.concept_hover {
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item .concept_hover,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item .concept_hover {
     display: block;
-    margin-right: -2px;
+}
+#add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.content,
+#add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.content {
+    margin-bottom: -70px;
 }
 
 
@@ -325,7 +331,7 @@ article.container{
 #add_ppp:hover #add_ppp_inner #ppp_add .add_content .add_item.call_to_action a,
 #add_ppp #add_ppp_inner:hover #ppp_add .add_content .add_item.call_to_action a{
 
-    right: 160px;
+    right: 155px;
     bottom: 40px;
 }
 
